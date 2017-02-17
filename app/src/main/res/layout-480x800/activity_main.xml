@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lockscreen.localshop.com.dashboard.MainActivity"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/upper_part"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/button2"
+            android:background="@drawable/icon_statistics"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="160dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:layout_alignParentTop="true"
+            android:id="@+id/menu"
+            android:background="@drawable/icon_menue"
+            android:layout_marginTop="19dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <ImageView
+            app:srcCompat="@drawable/logo"
+            android:id="@+id/ease_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <ImageView
+            app:srcCompat="@drawable/arcs"
+            android:id="@+id/arcs"
+            android:layout_width="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="85dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp">
+        <GridLayout
+            android:id="@+id/gL_staToggle_MA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp">
+            <Button
+                android:id="@+id/B_AllTime_MA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:text="All Time"
+                android:background="@android:color/background_light"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/DarkBlue"
+                android:minHeight="30dp"
+                android:minWidth="0dp"/>
+
+            <Button
+                android:text="Weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/B_Weekly_MA"
+                android:background="@drawable/strock"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/background_light"
+                android:minHeight="30dp"
+                android:minWidth="0dp"/>
+
+        </GridLayout>
+
+        <TextView
+            android:text="My Courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tEnterCourse_MA"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/background_light"
+            android:layout_marginBottom="10dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <GridLayout
+                android:id="@+id/gl_circleSta_MA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:id="@+id/rLCircle0_MA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/pCircle0_MA"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_centerInParent="true"
+                        android:progress="100"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular"
+                        android:layout_margin="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tCircle0_MA"
+                        android:text="0"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/background_light" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rLCircle1_MA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/pCircle1_MA"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_centerInParent="true"
+                        android:progress="100"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular"
+                        android:layout_margin="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tCircle1_MA"
+                        android:text="0"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/background_light" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rLCircle2_MA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/pCircle2_MA"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_centerInParent="true"
+                        android:progress="100"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular"
+                        android:layout_margin="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tCircle2_MA"
+                        android:text="0"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/background_light" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rLCircle3_MA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/pCircle3_MA"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_centerInParent="true"
+                        android:progress="100"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular"
+                        android:layout_margin="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tCircle3_MA"
+                        android:text="0"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/background_light" />
+
+                </RelativeLayout>
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/gl2_circleSta_MA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:alpha="0">
+
+                <RelativeLayout
+                    android:id="@+id/rL2Circle0_MA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/p2Circle0_MA"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_centerInParent="true"
+                        android:progress="100"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular"
+                        android:layout_margin="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t2Circle0_MA"
+                        android:text="0"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/background_light" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rL2Circle1_MA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/p2Circle1_MA"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_centerInParent="true"
+                        android:progress="100"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular"
+                        android:layout_margin="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t2Circle1_MA"
+                        android:text="0"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/background_light" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rL2Circle2_MA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/p2Circle2_MA"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_centerInParent="true"
+                        android:progress="100"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular"
+                        android:layout_margin="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t2Circle2_MA"
+                        android:text="0"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/background_light" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rL2Circle3_MA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:id="@+id/p2Circle3_MA"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_centerInParent="true"
+                        android:progress="100"
+                        android:max="100"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular"
+                        android:layout_margin="5dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/t2Circle3_MA"
+                        android:text="0"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/background_light" />
+
+                </RelativeLayout>
+            </GridLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ScrollView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/s1EnterCourse_MA"
+                android:layout_gravity="center"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="250dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/lLEnterCourse_MA"
+                    android:gravity="center">
+
+                </LinearLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lLExtra_MA"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/add_flipcard"
+                android:id="@+id/imageView"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_width="35dp" />
+
+            <Button
+                android:id="@+id/b0Extra_MA"
+                android:text="My Flip cards"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strock"
+                android:textColor="@android:color/background_light"
+                android:layout_width="200dp"
+                android:minHeight="30dp"
+                android:minWidth="0dp"
+                android:paddingLeft="50dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/newTopicBExtra_MA"
+                android:text="Add New Topic"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/strock"
+                android:textColor="@android:color/background_light"
+                android:minHeight="30dp"
+                android:minWidth="0dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
